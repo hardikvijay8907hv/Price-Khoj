@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root{color-scheme:dark;--bg:#080b14;--panel:#111827;--panel2:#151f31;--line:rgba(148,163,184,.16);--muted:#9aa8bd;--text:#f4f7fb;--accent:#8b7cff;--cyan:#42d6cf}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 15% 0%,rgba(93,76,190,.22),transparent 38%),radial-gradient(ellipse at 90% 20%,rgba(31,160,164,.12),transparent 32%),var(--bg);color:var(--text);font-family:'DM Sans',sans-serif}
+a{color:inherit;text-decoration:none}
+.topbar{height:76px;max-width:1160px;margin:auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.brand{font-family:'Space Grotesk',sans-serif;font-size:25px;font-weight:700;letter-spacing:-1px;display:flex;align-items:center;gap:9px}
+.brand>span:last-child{color:var(--cyan)}
+.brand-mark{width:34px;height:34px;display:grid;place-items:center;border-radius:11px;background:linear-gradient(135deg,var(--accent),#4e9cf5);color:white;font-size:20px}
+.tagline{color:var(--muted);font-size:13px}
+main{max-width:1040px;margin:0 auto;padding:82px 28px 40px}
+.hero{text-align:center;max-width:800px;margin:0 auto}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid rgba(139,124,255,.3);border-radius:999px;background:rgba(139,124,255,.09);color:#c5bdff;font-size:11px;font-weight:700;letter-spacing:1.5px}
+.eyebrow span,.live-pill i{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}
+h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(42px,7vw,72px);line-height:1.04;letter-spacing:-3.5px;margin:25px 0 17px}
+h1 em{font-style:normal;background:linear-gradient(90deg,#a69aff,#53d7d0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.intro{color:var(--muted);font-size:16px;line-height:1.7;margin:0 auto 30px;max-width:650px}
+.search{display:flex;align-items:center;gap:12px;max-width:720px;margin:0 auto;padding:8px 9px 8px 19px;border:1px solid rgba(165,153,255,.3);border-radius:17px;background:rgba(17,24,39,.9);box-shadow:0 16px 55px rgba(0,0,0,.28),0 0 35px rgba(139,124,255,.08)}
+.search-symbol{font-size:26px;color:#a99eff}
+.search input{min-width:0;flex:1;background:transparent;border:0;outline:0;color:var(--text);font:inherit;font-size:15px}
+.search input::placeholder{color:#75839a}
+.search button{border:0;border-radius:11px;padding:14px 20px;background:linear-gradient(135deg,#8b7cff,#5d7ff5);color:white;font:700 14px 'DM Sans',sans-serif;cursor:pointer;transition:transform .2s,filter .2s}
+.search button:hover{transform:translateY(-1px);filter:brightness(1.12)}
+.search button span{margin-left:10px}
+.suggestions{display:flex;align-items:center;justify-content:center;gap:9px;flex-wrap:wrap;margin:17px 0 0;color:var(--muted);font-size:12px}
+.suggestions button{border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.035);color:#cbd5e1;padding:7px 12px;font:500 12px 'DM Sans',sans-serif;cursor:pointer}
+.suggestions button:hover{border-color:var(--accent);color:white}
+.empty{max-width:720px;margin:65px auto 20px;padding:35px 25px;text-align:center;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,rgba(21,31,49,.8),rgba(12,18,31,.75))}
+.empty-icon{width:52px;height:52px;margin:0 auto 15px;display:grid;place-items:center;border-radius:16px;background:rgba(139,124,255,.13);color:#b4aaff;font-size:28px}
+.empty h2,.section-head h2{font-family:'Space Grotesk',sans-serif;letter-spacing:-.7px;margin:0 0 8px;font-size:23px}
+.empty p,.note{color:var(--muted);font-size:13px;line-height:1.65;margin:0}
+.results{max-width:800px;margin:62px auto 20px}
+.section-head{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:13px}
+.section-head small{display:block;color:var(--muted);font-size:10px;font-weight:700;letter-spacing:1.5px;margin-bottom:6px}
+.live-pill{display:flex;align-items:center;gap:8px;padding:8px 11px;border:1px solid rgba(66,214,207,.22);border-radius:999px;color:#8de5df;font-size:11px;white-space:nowrap}
+.note{margin-bottom:20px}
+.store-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.store-card{padding:23px;border:1px solid var(--line);border-radius:19px;background:linear-gradient(145deg,rgba(21,31,49,.95),rgba(13,19,32,.95));min-width:0}
+.store-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.store-logo{font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:700;letter-spacing:-1px}
+.amazon .store-logo{color:#ffbd69}.amazon .store-logo span{color:#f4f7fb}
+.flipkart .store-logo{color:#75aaff}
+.store-label{color:var(--muted);font-size:9px;font-weight:700;letter-spacing:1.2px}
+.store-card p{min-height:42px;color:var(--muted);font-size:13px;line-height:1.6;margin:17px 0}
+.store-card>a{display:flex;justify-content:space-between;align-items:center;padding:13px 14px;border-radius:11px;background:rgba(255,255,255,.07);border:1px solid var(--line);font-size:13px;font-weight:700;transition:background .2s}
+.store-card>a:hover{background:rgba(139,124,255,.18)}
+.compare-tip{display:flex;gap:13px;margin-top:16px;padding:17px;border:1px solid rgba(66,214,207,.16);border-radius:15px;background:rgba(66,214,207,.045)}
+.compare-tip>span{color:var(--cyan);font-size:20px}
+.compare-tip strong{font-size:13px}
+.compare-tip p{color:var(--muted);font-size:12px;line-height:1.6;margin:5px 0 0}
+footer{max-width:1040px;margin:30px auto 0;padding:22px 28px 30px;border-top:1px solid var(--line);display:flex;justify-content:center;align-items:center;gap:8px 18px;flex-wrap:wrap;color:#7e8ba0;font-size:11px}
+.credit{color:#aab6c9}.credit strong{color:#f4f7fb}
+[hidden]{display:none!important}
+@media(max-width:620px){.topbar{height:66px;padding:0 18px}.brand{font-size:22px}.tagline{font-size:11px}main{padding:60px 18px 30px}h1{letter-spacing:-2.3px}.intro{font-size:14px}.search{gap:8px;padding:7px 7px 7px 13px}.search input{font-size:13px}.search button{padding:12px 13px;font-size:12px}.suggestions{gap:7px}.store-grid{grid-template-columns:1fr}.store-card p{min-height:0}.section-head{align-items:flex-start;flex-direction:column}.results{margin-top:48px}footer{padding-left:18px;padding-right:18px}}
