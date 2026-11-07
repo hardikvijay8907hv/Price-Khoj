@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PriceKhoj — Compare prices simply</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">₹</span> Price<span>Khoj</span></a>
+    <span class="tagline">Compare smarter. Shop better.</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span></span> SIMPLE PRICE COMPARISON</div>
+      <h1>Find your product.<br><em>Compare the deals.</em></h1>
+      <p class="intro">Search Amazon and Flipkart together — no account, API key or setup required.</p>
+
+      <form id="searchForm" class="search">
+        <span class="search-symbol">⌕</span>
+        <input id="product" type="search" placeholder="What are you looking for? e.g. wireless earbuds" maxlength="120" required>
+        <button type="submit">Compare <span>→</span></button>
+      </form>
+      <div class="suggestions">
+        <span>Popular searches</span>
+        <button type="button" data-search="iPhone 16">iPhone 16</button>
+        <button type="button" data-search="gaming laptop">Gaming laptop</button>
+        <button type="button" data-search="Bluetooth speaker">Bluetooth speaker</button>
+      </div>
+    </section>
+
+    <section class="results" id="results" hidden>
+      <div class="section-head">
+        <div><small>YOUR SEARCH</small><h2 id="queryTitle">Product</h2></div>
+        <span class="live-pill"><i></i> Store search links</span>
+      </div>
+      <p class="note">We’ll open each store’s search page in a new tab. Compare the same model, variant, seller, delivery charges and offers before choosing.</p>
+      <div class="store-grid">
+        <article class="store-card amazon">
+          <div class="store-top"><div class="store-logo">a<span>mazon</span></div><span class="store-label">STORE 01</span></div>
+          <p>Check available listings and current offers on Amazon India.</p>
+          <a id="amazonLink" href="#" target="_blank" rel="noopener noreferrer">Search on Amazon <b>↗</b></a>
+        </article>
+        <article class="store-card flipkart">
+          <div class="store-top"><div class="store-logo">Flipkart</div><span class="store-label">STORE 02</span></div>
+          <p>Check matching products and current offers on Flipkart.</p>
+          <a id="flipkartLink" href="#" target="_blank" rel="noopener noreferrer">Search on Flipkart <b>↗</b></a>
+        </article>
+      </div>
+      <div class="compare-tip"><span>✦</span><div><strong>How to find the actual cheapest deal</strong><p>Compare the final checkout price, not just the displayed price. Coupons, bank offers, delivery fees and seller ratings can change the best deal.</p></div></div>
+    </section>
+
+    <section class="empty" id="empty">
+      <div class="empty-icon">⌕</div>
+      <h2>Your next deal starts here</h2>
+      <p>Enter a product name above to get direct search links for both stores.</p>
+    </section>
+  </main>
+
+  <footer><span>© 2026 PriceKhoj</span><span class="credit">Made By <strong>Hardik Vijay</strong></span><span>Independent comparison helper · Not affiliated with either store</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
